@@ -33,14 +33,21 @@
         margin: 0 auto;
     }
 
-    h1 {
-        font-size: min(6vh, 4vw);        /* responsive: whichever is smaller */
-        text-transform: uppercase;
-        letter-spacing: 0.2em;
-        text-shadow: 0 0 10px rgba(255,215,0,0.5);
-        margin: 1vh 0;
-        flex-shrink: 0;
-    }
+   h1 {
+    font-size: min(6vh, 4vw);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-shadow: 0 0 10px rgba(255,215,0,0.5);
+    margin: 1vh 0;
+    flex-shrink: 0;
+    animation: blink 2s infinite;   /* Add this line */
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.2; }
+    100% { opacity: 1; }
+}
 
     .rates-grid {
         display: grid;
@@ -161,4 +168,5 @@
 </script>
 
 </body>
+
 </html>
