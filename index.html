@@ -148,8 +148,8 @@
                             card.className = "rate-card";
                             card.innerHTML = `
                         <div class="metal">${metal.label}</div>
-                        <div class="value">${Number(rate).toFixed(2)}</div>
-                        <div class="unit">${data.currency || "USD per troy ounce"}</div>
+                        <div class="value">${Number(rate)}</div>
+                        <div class="unit">${data.currency || "INR ₹"}</div>
                     `;
                             grid.appendChild(card);
                         } else {
